@@ -1,0 +1,4 @@
+#!/bin/bash
+_now=$(date +"%Y_%m_%d")
+nmap -oG $_now -iL Target-IPs
+python3 ScanResultParser.py
